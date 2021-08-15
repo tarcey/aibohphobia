@@ -109,7 +109,7 @@ public class Compiler {
                     /*  +A,B+
                     * B' <- A+B
                     * A' <- -B
-                    * (if A and B point to the same value, both
+                    * (if A and B point to the same location, both
                     *  become -A)
                     */
                     return (mem) -> {
@@ -301,7 +301,7 @@ public class Compiler {
                     /*  *A,B*
                     * B' <- A*B
                     * A' <- 1/B
-                    * (if A and B point to the same value, both
+                    * (if A and B point to the same location, both
                     *  become 1/B. If A or B have no modular inverse, that is, 
                     *  when at least one is either 0, all 1s, or all -1s, then 
                     *  this is just a swap-operation).
