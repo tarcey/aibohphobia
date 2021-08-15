@@ -439,7 +439,7 @@ public class Compiler {
         };
         /*  Loop
         *
-        *   oA,IDENTIFIER,Bo
+        *   oA,Bo
         *
         *   What it does:
         *   No-OP if A==B evaluates to TRUE,
